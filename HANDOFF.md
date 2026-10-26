@@ -18,7 +18,8 @@ Judging for this track: Options Insight 60% (useful and novel; "barely different
 - Docs written: `hackathon_reference.md`, `product_spec.md`, `agents.md`, `resources.md`, `inspiration_products.md`, `improvements.md`, `api_notes.md`, `sidekick_prompts.md`, `store_description_draft.md`.
 - Offline math: `src/moveedge_math.js` with tests in `test/` (`npm test`, 8 passing). Uses hand-made fixtures only, not market data. Not yet run inside TrendSpider.
 - **No indicator has been built or tested in TrendSpider yet.** Nothing is published.
-- The owner has not confirmed whether they have a TrendSpider subscription or trial. Paid items: the platform (14-day trial exists), the real-time options data add-on, and Sidekick credits.
+- The owner has activated a TrendSpider account (logged in, confirmed 2026-10-26) from the hackathon builder pack. Whether it includes the real-time options data add-on and Sidekick credits is not yet confirmed; test it.
+- Builder-pack links resolved to official TrendSpider docs pages (painting, additional series, API options functions, examples, migrating from other platforms) and two blog posts (AI coding of indicators; publishing to the Store). Notes from the docs are in `api_notes.md`. The blog posts' contents are unread.
 
 ## Open questions (resolve by testing in TrendSpider)
 1. Is options data a current snapshot or per-bar history? (`sidekick_prompts.md` Step 1.) This decides whether the band is a right-edge projection or a historical series.

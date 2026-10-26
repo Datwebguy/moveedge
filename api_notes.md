@@ -40,3 +40,15 @@ Read from platform-docs.trendspider.com (api.md and limitations.md). Items marke
 - One `options_data_for_all_expirations` call (strikes ~15 each side, metrics `l`, `iv`, `oi`, `gg`) feeds everything.
 - Pure math lives in `src/moveedge_math.js` and is tested offline with `npm test`. It is written so it can be pasted into the indicator. It follows the documented `resultByStrike` shape but has not run inside TrendSpider.
 - Straddle-to-1-sigma factor 0.85 is a common rule of thumb, not a TrendSpider figure; state it in the description.
+
+## Additions from the builder pack links (painting, additional series, examples)
+Sources: the docs pages for painting, additional series and examples (all on TrendSpider's own docs site). The two builder-pack blog posts (AI coding of custom indicators; publishing to the Store) returned only titles when fetched, so their contents are unread: the owner should read them in the browser.
+
+- `paint` styles also include `area`, `arearange`/`columnrange` (points `{high, low}`), `histogram`, `labels_above`/`labels_below` (strings or numbers, sparse with `null`; `fontSize` 10–25, `backgroundColor`, `backgroundOpacity`, `verticalOffset`). `arearange` with `{high, low}` points is a candidate for drawing the band as one series.
+- `paint` takes a single color or an array of per-point colors; any CSS color works. `hidden: true` hides a painted line used only for `fill`.
+- Offsets: `input('offset', n)` shifts all lines; `input('<linename>__offset', n)` shifts one line.
+- `paint_projection(values, params)` or `paint_projection(lineId, values)` paints values after the last candle; the second form inherits that line's style. This is the planned way to project the band forward.
+- Data that is not a time series (such as an options snapshot) must be placed onto candles yourself: `land_points_onto_series(times, values, time)` and `interpolate_sparse_series(...)`.
+- Independent requests can run in parallel with `Promise.all`.
+- Official example #10 ("UO volume at strike") paints horizontal levels at option strikes from `request.unusual_options(constants.ticker)`, thickness by contract volume. The page itself warns that `paint()` inside a loop is a poor approach and recommends painting a fixed number of the closest strikes. Move Edge's key-strike lines follow that advice (fixed top-N).
+- Existing in the official docs, so not novel by itself: strike-level lines weighted by volume. Move Edge must differ through the band, the skew lean, the agreement/confidence reading and the signals.
