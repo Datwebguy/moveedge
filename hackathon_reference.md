@@ -25,7 +25,7 @@ Enter once per category. Each script can only be submitted to one category.
    For indicators designed to generate clear buy and/or sell signals based on price action, momentum, trend, volume, or other technical inputs.
 
 2. **Most Unique Options Indicator**  
-   For indicators built specifically around options markets, options data, or options-derived metrics and plotted on the underlying asset’s chart.
+   For indicators built around options data such as the Greeks, implied volatility, open interest, options flow, gamma exposure, dealer positioning, or expected moves (wording from the registration form), plotted on the underlying asset’s chart.
 
 3. **Best Fundamental Analysis Indicator**  
    For indicators that analyze company fundamental, financial, and economic data to help evaluate value, quality, growth, and risk in their businesses.
@@ -44,6 +44,7 @@ Enter once per category. Each script can only be submitted to one category.
 - All indicators must be public and free to apply in the TrendSpider Store (open source / published source code).
 - Submit using the official competition form.
 - One script, one entry (one category only).
+- Registration: completed (builder pack emailed to the registrant; the form notes "Only open source indicators accepted").
 - Registration form: https://docs.google.com/forms/d/e/1FAIpQLSdKGZF4WPaKkzArwxCkIQlrCHrIUEQMEKosfBfB5Rcqd0eCRw/viewform
 - Submission form: https://docs.google.com/forms/d/e/1FAIpQLSdOi84k_GXCS3h-YxDqruye0uGAi6cqteRWK-QUoYx3VmItTA/viewform
 
