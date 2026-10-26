@@ -1,6 +1,6 @@
 # TrendSpider 2026 Developer Hackathon — Complete Reference
 
-All information verified from official sources (trendspider.com/hackathon, official X posts, Google Forms, judging PDF link, Store). No invented details.
+Compiled from official sources (trendspider.com/hackathon, official X posts, Google Forms, judging PDF, Store). The judging PDF was read directly; items marked (unverified) were not re-checked against the live site.
 
 ## Overview
 - Official page: https://trendspider.com/hackathon
@@ -14,8 +14,8 @@ All information verified from official sources (trendspider.com/hackathon, offic
 ## Schedule (as of latest official posts)
 - Registration opens: September 1, 2026
 - Registration closes: September 16, 2026
-- Submission deadline: October 26, 2026 (extended; original was October 5)
-- Winners announced: November 4, 2026 (live on X)
+- Submission deadline: October 26, 2026 (extended; original was October 5 per the judging PDF) (unverified)
+- Winners announced: November 4, 2026 (live on X) (unverified; the PDF said October 14)
 - Top 4 winners featured on Nasdaq Tower
 
 ## Tracks / Categories (identical prizes in each)
@@ -67,7 +67,10 @@ From available PDF content and category notes:
 - **Most Unique Options Indicator**:
   - Options Insight 60% (does this reveal something genuinely useful about the options market, and is it novel?)
   - Execution 40% (is it clear, well built, and easy to read on a live chart?)
-- Other tracks have their own weights (Fundamental and Beautiful follow similar clarity/utility focus).
+- **Best Fundamental Analysis Indicator**: Trading Usefulness 60% (does it turn fundamental data into something a trader can act on?), Execution 40% (is the information organized and presented clearly?).
+- **Most Beautiful On-Chart Indicator**: Visual Impact 60% (how polished, creative and impressive?), Clarity 40% (does the visual make the information easier to understand, or is it just decoration?).
+- Score scale per criterion: 3 = exceeds expectations (better than what already exists), 2 = meets expectations, 1 = below expectations (half finished, confusing, or barely different from what exists), 0 = not usable (broken, or a judge cannot make sense of it). Judges score independently and scores are averaged.
+- The Buy/Sell-only rules (long only, alternating, strategy-runnable, state timeframe, 7,000 candle lookback, Dow 30 tickers, no repainting) do not apply to the Options track.
 
 ## Tools Allowed
 - TrendSpider Custom JS scripting (JavaScript)
@@ -87,4 +90,6 @@ From available PDF content and category notes:
 - Options data note: Real-time OPRA requires paid add-on ($9.50/mo non-professional); functions are native.
 
 ## Our Target Track
-**Most Unique Options Indicator** — Move Edge (options chain as live prediction proxy → band + bias + registered signals).
+**Most Unique Options Indicator** — Move Edge (options chain as live prediction proxy → band + bias + registered signals)
+
+Product name is **Move Edge** (two words joined, no "Expected" prefix)..

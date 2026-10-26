@@ -49,7 +49,7 @@ Sidekick is TrendSpider’s built-in agent. It is not a general chatbot. It has 
 
 ---
 
-## How to use Sidekick for the Expected-Move Edge indicator
+## How to use Sidekick for the Move Edge indicator
 
 Recommended workflow:
 
