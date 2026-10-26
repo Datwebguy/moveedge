@@ -1,0 +1,6 @@
+{
+  "name": "moveedge",
+  "private": true,
+  "description": "Move Edge option-chain math, tested offline. The TrendSpider indicator itself is built inside TrendSpider.",
+  "scripts": { "test": "node --test test/moveedge_math.test.js" }
+}

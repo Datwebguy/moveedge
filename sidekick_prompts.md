@@ -22,6 +22,13 @@ Write down the answer. It decides the design:
 - Snapshot only: the band projects forward from the last bar. Signals use price versus the current band.
 - Per-bar: a full historical band is possible.
 
+## Constraints to tell Sidekick (from api_notes.md)
+- Start with describe_indicator(name) as a price-pane indicator.
+- Every request.* call must be awaited, and the result checked for an error.
+- Use one request.options_data_for_all_expirations call, not one per expiration (max 6 request calls per script).
+- Use a fixed number of paint() calls on every run, never a variable-length loop.
+- Use paint_label_at_line for the "Lean" label and paint_projection (max 100 values) to project forward if data is a snapshot.
+
 ## Step 2 — Move Edge core (band + skew + strikes)
 Paste after Step 1 passes. Adjust the first paragraph to match what Step 1 found.
 
